@@ -8,7 +8,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+		<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
 			#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 			/* Add your own MailChimp form style overrides in your site stylesheet or in this style block
@@ -17,7 +17,10 @@
 			 .phm.pluginLikeboxStream{overflow:hidden !important;background-color:#0F6 !important}	
 			/*not fucking working*/				
 		</style>
-		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="navbar navbar-default">
@@ -31,10 +34,14 @@
 			</div>
 			<div class="navbar-collapse collapse navbar-responsive-collapse">
 				<ul class="nav navbar-nav">
+					<li><a>Bio</a></li>
+					<li><a>Foto</a></li>
+					<li><a>Video</a></li>
+					<li><a>Contatti</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Youtube</a></li>
+				<li></li>
+				<li></li>
 				<li>
 					<div>
 					</div>
@@ -43,53 +50,82 @@
 			</div>
 		</div>
 		<div class="container">
+			<!--ROW 1-->
 			<div class="row">
-					<div class="col-md-9 col-s-9">
-						<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/videoseries?list=PLK1mC5QBmz4Y060GAx0jQMHEDHGdPLZSR" allowfullscreen></iframe>
-						</div>
+				<!--CENTRAL COLUMN-->
+				<div class="col-md-9 col-sm-9 col-lg-9">
+					<div>
+						<img width="100%" class="image-responsive" src="img/Palconudo-Header_picture_thin.jpg" />
 					</div>
-					<div class="col-md-3 col-s-3">
-						<div class="embed-responsive embed-responsive-facebook">
-							<iframe class="embed-responsive-item" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpalconudogenova&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false" scrolling="no" frameborder="1" allowTransparency="true"></iframe>
-						</div>
-                        <style type="text/css">
-						
-						 </style>
+					<div>
+						<hr>
 					</div>
-			</div>
-			<div class="row">
-					<div class="col-md-6 col-s-6">
-						<!-- MailChimp Signup Form -->
-						<div id="mc_embed_signup">
-							<form action="http://palconudo.us8.list-manage.com/subscribe/post?u=bc448ba87e16fc038efc3bd31&amp;id=00f95d2126" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-								<div id="mc_embed_signup_scroll">
-									<h4>Iscriviti alla mailing list</h4>
-									<div class="mc-field-group">
-										<label for="mce-EMAIL">Indirizzo email: </label>
-										<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-									</div>
-									<div id="mce-responses" class="clear">
-										<div class="response" id="mce-error-response" style="display:none"></div>
-										<div class="response" id="mce-success-response" style="display:none"></div>
-									</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-									<div style="position: absolute; left: -5000px;"><input type="text" name="b_bc448ba87e16fc038efc3bd31_00f95d2126" tabindex="-1" value=""></div>
-									<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-								</div>
-							</form>
-						</div>
-						<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-						<!--End mc_embed_signup-->
-					</div>	
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-s-6">
-					<p></p>
-					<iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:3kWNJTOH2sjtx11p4V6gEU&size=basic&theme=light" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 				</div>
 			</div>
-			<div id="photos"></div>
-			<iframe src="http://embedsocial.com/facebook_album/album_photos/504834489637568" width="900" height="1450" frameborder="0" scrolling="no" marginheight="0"  marginwidth="0"></iframe>
+			<!--ROW 2-->
+			<div class="row">
+				<!--CENTRAL COLUMN-->
+				<div class="col-md-9 col-sm-9 col-lg-9">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe src="http://www.youtube.com/embed/videoseries?list=PLK1mC5QBmz4Y060GAx0jQMHEDHGdPLZSR" allowfullscreen></iframe>
+					</div>
+					<div>
+						<hr>
+					</div>
+					<div class="embed-responsive" style="height:750px">
+						<div id="photos"></div>
+						<iframe src="http://embedsocial.com/facebook_album/album_photos/504834489637568" width="900" height="750" frameborder="0" marginheight="0"  marginwidth="0"></iframe>
+					</div>
+				</div>
+				<!--RIGHT COLUMN-->
+				<div class="col-md-3 col-sm-3 col-lg-3 col-xl-3 hidden-xs">
+					<div class="embed-responsive" style="height:393px">
+						<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpalconudogenova&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false" allowTransparency="true"></iframe>
+					</div>
+					<div>
+						<hr>
+					</div>
+					<!-- MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="http://palconudo.us8.list-manage.com/subscribe/post?u=bc448ba87e16fc038efc3bd31&amp;id=00f95d2126" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+								<h4>Iscriviti alla mailing list</h4>
+								<div class="mc-field-group">
+									<label for="mce-EMAIL">Indirizzo email: </label>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;"><input type="text" name="b_bc448ba87e16fc038efc3bd31_00f95d2126" tabindex="-1" value=""></div>
+								<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+						</form>
+					</div>
+					<script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+					<div>
+						<hr>
+					</div>
+					<div class="col-md-12">
+						<iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:3kWNJTOH2sjtx11p4V6gEU&size=basic&theme=light" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+					</div>	
+					<div class="col-md-12 embed-responsive" style="height:80px">
+						<iframe src="https://embed.spotify.com/?uri=spotify:album:30YJDZaeFufyTbIrl1UTkj" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
+					</div>
+					<div class="col-md-12">
+						<hr>
+					</div>
+					<div class="col-md-12">
+						<!--<a class="twitter-share-button" href="https://twitter.com/share">Tweet</a><a class="twitter-follow-button" href="https://twitter.com/palconudo" data-show-count="false" data-lang="en">Follow @palconudo</a>-->
+						<a class="twitter-timeline" href="https://twitter.com/palconudo" data-widget-id="561122046936375296">Tweet di @palconudo</a>
+						<script>
+						window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+						</script>
+					</div>
+				</div>
+			</div>
 			<h2>Example body text</h2>
 			<p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
 			<p><small>This line of text is meant to be treated as fine print.</small></p>
@@ -123,9 +159,6 @@
 			</div>-->
 		</div>
 		
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
+		
 	</body>
 </html>
