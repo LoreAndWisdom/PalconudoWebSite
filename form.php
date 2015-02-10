@@ -19,5 +19,30 @@
         }else
         {
           echo '<h2>Thanks for posting comment.</h2>';
-        }
+		  // L'INDIRIZZO DEL DESTINATARIO DELLA MAIL 
+			$to = "info@palconudo.it"; 
+
+			// IL SOGGETTO DELLA MAIL 
+			$subject = "Modulo proveniente dal sito palconudo.it"; 
+
+			// COSTRUIAMO IL CORPO DEL MESSAGGIO 
+			$body = "Contenuto del modulo:\n\n"; 
+			$body .= "email: " . trim(stripslashes($_POST["email"])) . "\n"; 
+			$body .= "Note: " . trim(stripslashes($_POST["comment"])) . "\n"; 
+
+			// INTESTAZIONI SUPPLEMENTARI 
+			$headers = "From: Modulo utenti<modulo@palconudo.it>"; 
+
+			// INVIO DELLA MAIL 
+			if(@mail($to, $subject, $body, $headers)) 
+			{ // SE L'INOLTRO È ANDATO A BUON FINE... 
+
+			echo "La mail è stata inoltrata con successo."; 
+
+			} else {// ALTRIMENTI... 
+
+			echo "Si sono verificati dei problemi nell'invio della mail."; 
+
+			} 
+		}
 ?>
