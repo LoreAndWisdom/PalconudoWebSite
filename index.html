@@ -86,10 +86,29 @@
 						<h3>&#187; <b>Foto</b></h3>
 						<p>Guarda i nostri album fotografici su <a href="http://facebook.com/palconudogenova/photos_stream?tab=photos_albums" target="_blank">Facebook</a>:</p> 
 					</div>
-					<div class="embed-responsive" style="height:308px">
+					<div id="ei-slider" class="ei-slider">
+						<ul class="ei-slider-large">
+						<li><img src="img/slideshow/1.jpg" alt="Palconudo" /><div class="ei-title"><h2>Elisa "Ela" Castelli</h2><h3>foto di Emanuela Cotroneo</h3></div></li>
+						<li><img src="img/slideshow/2.jpg" alt="Palconudo" /><div class="ei-title"><h2>Marco "Ioio" Pantella</h2><h3>foto di Emanuela Cotroneo</h3></div></li>
+						<li><img src="img/slideshow/3.jpg" alt="Palconudo" /><div class="ei-title"><h2>Lorenzo Marmorato e Lorenzo Pigozzo</h2><h3>foto di Emanuela Cotroneo</h3></div></li>
+						<li><img src="img/slideshow/4.jpg" alt="Palconudo" /><div class="ei-title"><h2>Lorenzo Pigozzo</h2><h3>foto di Emanuela Cotroneo</h3></div></li>
+						<li><img src="img/slideshow/5.jpg" alt="Palconudo" /><div class="ei-title"><h2>Daniele "Barre" Barreca</h2><h3>foto di Emanuela Cotroneo</h3></div></li>
+						<li><img src="img/slideshow/6.jpg" alt="Palconudo" /><div class="ei-title"><h2>Marco "Ioio" Pantella</h2><h3>foto di Emanuela Cotroneo</h3></div></li>
+						</ul>
+						<ul class="ei-slider-thumbs">
+						<li class="ei-slider-element">Current</li>
+						<li><a href="#">Slide 1</a><img src="img/slideshow/1.jpg" alt="Palconudo"/></li>
+						<li><a href="#">Slide 2</a><img src="img/slideshow/2.jpg" alt="Palconudo"/></li>
+						<li><a href="#">Slide 3</a><img src="img/slideshow/3.jpg" alt="Palconudo"/></li>
+						<li><a href="#">Slide 4</a><img src="img/slideshow/4.jpg" alt="Palconudo"/></li>
+						<li><a href="#">Slide 5</a><img src="img/slideshow/5.jpg" alt="Palconudo"/></li>
+						<li><a href="#">Slide 6</a><img src="img/slideshow/6.jpg" alt="Palconudo"/></li>
+						</ul>
+					</div>
+					<!--<div class="embed-responsive" style="height:308px">
 						<div id="photos"></div>
 						<iframe src="http://embedsocial.com/facebook_album/album_photos/504834489637568" width="900" height="308" frameborder="0" marginheight="0"  marginwidth="0" scrolling="no" style="overflow:hidden"></iframe>
-					</div>
+					</div>-->
 					<div id="contatti"></div>
 					<div>
 						<hr>
@@ -237,5 +256,16 @@
 				</div>
 			</div>
 		</footer>
+		<script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+					easing		: 'easeOutExpo',
+					titleeasing	: 'easeOutExpo',
+					titlespeed	: 1200
+                });
+            });
+        </script>
 	</body>
 </html>
